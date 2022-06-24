@@ -20,6 +20,7 @@ public class Puntaje : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PuntajeAltoSO.Cargar();
         TransformPuntajeActual = GameObject.Find("PuntajeActual").transform;
         TransformPuntajeAlto = GameObject.Find("PuntajeAlto").transform;
         TextoActual = TransformPuntajeActual.GetComponent<TMP_Text>();
@@ -43,7 +44,7 @@ public class Puntaje : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PuntajeAltoSO.Cargar();
+      
         TextoActual.text = $"PuntajeActual: {PuntajeAltoSO.puntaje}";
         if (PuntajeAltoSO.puntaje > PuntajeAltoSO.puntajeAlto)
         {

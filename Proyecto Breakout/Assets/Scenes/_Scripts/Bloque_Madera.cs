@@ -11,8 +11,8 @@ public class Bloque_Madera : Bloque
     }
 
     // Update is called once per frame
-    void Update()
+    public override void RebotarBola(Collision collision)
     {
-        
+        base.RebotarBola(collision);
     }
 }
