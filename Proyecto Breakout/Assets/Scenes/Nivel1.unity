@@ -381,6 +381,10 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6591234739692324355, guid: cfac7985b8af0a043a6d3156c0669625, type: 3}
+      propertyPath: velocidadBola
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7917334013687084539, guid: cfac7985b8af0a043a6d3156c0669625, type: 3}
       propertyPath: m_RootOrder
       value: 3
