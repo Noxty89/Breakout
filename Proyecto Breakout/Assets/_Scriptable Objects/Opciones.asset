@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Opciones
   m_EditorClassIdentifier: 
   VelocidadBola: 0
-  NivelDificultad: 0
+  NivelDificultad: 1
+  ResistenciaBloques: 5

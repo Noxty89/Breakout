@@ -126,10 +126,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29ecea3392bc644db02b90d9e743ffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Resistencia: 1
+  Resistencia: 2
   AumentarPuntaje:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Puntaje, Assembly-CSharp
+        m_MethodName: AumentarPuntaje
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 200
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8648054952909255091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,4 +157,16 @@ MonoBehaviour:
   Resistencia: 1
   AumentarPuntaje:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

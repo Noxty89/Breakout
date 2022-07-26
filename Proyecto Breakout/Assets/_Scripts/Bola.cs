@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Bola : MonoBehaviour
 {
     public bool isGameStarted = false;
-    [SerializeField]public float velocidadBola = 23.0f;
+    [SerializeField]public float velocidadBola = 25.0f;
     Vector3 UltimaPosicion = Vector3.zero;
     Vector3 Direccion = Vector3.zero;
     Rigidbody rigidbody;
@@ -16,7 +16,7 @@ public class Bola : MonoBehaviour
     private void Awake()
     {
         control = GetComponent<ControlBordes>();
-
+        
     }
     // Start is called before the first frame update
     void Start()

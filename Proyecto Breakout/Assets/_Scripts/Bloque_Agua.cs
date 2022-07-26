@@ -8,7 +8,8 @@ public class Bloque_Agua : Bloque
     void Start()
     {
         Resistencia = 1;
+
         //pero al destruitr el bloque se realentiza la bola y cambia su direccion aleatoriamente
     }
-
-  }
+   
+}
