@@ -3,20 +3,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
+
+
 
 public class Bloque : MonoBehaviour
 {
-    public int Resistencia = 1;
+    public int Resistencia = 2;
     public UnityEvent AumentarPuntaje;
-  
+    public Opciones opciones;
 
 
-    private void Awake()
+    public void Awake()
     {
+        if(opciones.NivelDificultad == Opciones.dificultad.facil)
+        {
+            Resistencia = Resistencia - 1;
+        }
+        if (opciones.NivelDificultad == Opciones.dificultad.normal)
+        {
+            Resistencia = Resistencia +1;
+        }
+        if (opciones.NivelDificultad == Opciones.dificultad.dificil)
+        {
+            Resistencia = Resistencia - +3;
+        }
 
-   
 
     }
+
+
+
     public void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Bola")
@@ -53,6 +70,8 @@ public class Bloque : MonoBehaviour
     {
 
     }
+
+    
 
 
 }

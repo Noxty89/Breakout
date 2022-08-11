@@ -9,6 +9,8 @@ public class Opciones : PuntajePersistente
     public dificultad NivelDificultad = dificultad.facil;
     public int ResistenciaBloques = 5;
     bool facil, normal, dificil;
+    internal object onValueChanged;
+    public int nuevaDificultad;
 
     public enum dificultad
     {
@@ -24,26 +26,22 @@ public class Opciones : PuntajePersistente
     public void CambiarDificultad(int nuevaDificultad)
     {
         NivelDificultad = (dificultad)nuevaDificultad;
+
+        if (NivelDificultad == dificultad.facil)
+        {
+            ResistenciaBloques = ResistenciaBloques + -1;
+        }
+        if (NivelDificultad == dificultad.normal)
+        {
+            ResistenciaBloques = ResistenciaBloques + 0;
+        }
+        if (NivelDificultad == dificultad.dificil)
+        {
+            ResistenciaBloques = ResistenciaBloques + 0;
+        }
+
     }
 
-    public void CambiarResistencia(int NuevaResistencia)
-    {
-        ResistenciaBloques = (int)(dificultad)NuevaResistencia;
 
-        if (facil)
-        {
-            ResistenciaBloques = NuevaResistencia + 0;
-        }
-        if (normal)
-        {
-            ResistenciaBloques = NuevaResistencia + 3;
-        }
-        if (dificil)
-        {
-            ResistenciaBloques = NuevaResistencia + 5;
-        }
-            
-                  
-    }
-
+       
 }
